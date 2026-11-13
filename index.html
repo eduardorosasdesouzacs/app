@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida em Equilíbrio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TELA DE LOGIN -->
+    <section id="login" class="tela-login">
+        <div class="login-container">
+
+            <h1>Vida em Equilíbrio</h1>
+            <p>Cuide do seu corpo e da sua mente!</p>
+
+            <input type="text" id="usuario"
+                placeholder="Digite seu usuário">
+
+            <input type="password" id="senha"
+                placeholder="Digite sua senha">
+
+            <button onclick="entrar()">Logar</button>
+
+            <p id="mensagem"></p>
+
+        </div>
+    </section>
+
+
+    <!-- MENU PRINCIPAL -->
+    <section id="treinos" class="pagina escondido">
+
+        <header>
+            <h1>Minha Rotina de Treinos</h1>
+            <p>Seu corpo merece movimento!</p>
+        </header>
+
+        <main class="conteudo">
+
+            <h2>Plano semanal de exercícios</h2>
+
+            <div class="card">
+                <h3>Segunda-feira - Pernas e Glúteos</h3>
+                <ul>
+                    <li>Agachamento livre: 3 séries de 15 repetições.</li>
+                    <li>Afundo: 3 séries de 10 repetições por perna.</li>
+                    <li>Elevação pélvica: 3 séries de 15 repetições.</li>
+                    <li>Agachamento sumô: 3 séries de 12 repetições.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Terça-feira - Braços e Peito</h3>
+                <ul>
+                    <li>Flexão de braço: 3 séries de 8 repetições.</li>
+                    <li>Flexão com joelhos apoiados: 3 séries de 10.</li>
+                    <li>Prancha: 3 séries de 20 segundos.</li>
+                    <li>Flexão na parede: 3 séries de 12 repetições.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Quarta-feira - Descanso</h3>
+                <p>
+                    Dia de recuperação muscular.
+                    Faça alongamentos leves ou uma caminhada.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Quinta-feira - Abdômen</h3>
+                <ul>
+                    <li>Abdominal tradicional: 3 séries de 15.</li>
+                    <li>Elevação de pernas: 3 séries de 10.</li>
+                    <li>Prancha lateral: 3 séries de 20 segundos.</li>
+                    <li>Abdominal bicicleta: 3 séries de 15.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Sexta-feira - Corpo inteiro</h3>
+                <ul>
+                    <li>Polichinelos: 3 séries de 20.</li>
+                    <li>Agachamento: 3 séries de 15.</li>
+                    <li>Flexão de braço: 3 séries de 8.</li>
+                    <li>Prancha: 3 séries de 20 segundos.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Sábado e Domingo - Descanso</h3>
+                <p>
+                    Aproveite para descansar, dormir bem e recuperar
+                    as energias.
+                </p>
+            </div>
+
+            <p class="aviso">
+                Dica: respeite seus limites, faça aquecimento
+                antes dos exercícios e descanse entre as séries.
+            </p>
+
+        </main>
+
+        <div class="navegacao">
+            <span></span>
+            <button onclick="mostrarPagina('alimentacao')">
+                Alimentação saudável →
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- TELA DE ALIMENTAÇÃO -->
+    <section id="alimentacao" class="pagina escondido">
+
+        <header>
+            <h1>Alimentação Saudável</h1>
+            <p>Alimente seu corpo com qualidade!</p>
+        </header>
+
+        <main class="conteudo">
+
+            <h2>Como manter uma boa alimentação?</h2>
+
+            <div class="card">
+                <h3>🥗 Consuma frutas e verduras</h3>
+                <p>
+                    São fontes de vitaminas, minerais e fibras,
+                    importantes para o funcionamento do organismo.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Beba bastante água</h3>
+                <p>
+                    A hidratação ajuda a regular a temperatura corporal,
+                    transportar nutrientes e manter o organismo funcionando.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🍚 Tenha uma alimentação equilibrada</h3>
+                <p>
+                    Inclua arroz, feijão, legumes, verduras,
+                    frutas e proteínas nas suas refeições.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🥚 Consuma proteínas</h3>
+                <p>
+                    Ovos, peixes, frango e feijão ajudam na construção
+                    e recuperação dos músculos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🍎 Evite excessos de ultraprocessados</h3>
+                <p>
+                    Procure reduzir o consumo frequente de refrigerantes,
+                    doces e alimentos muito industrializados.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Benefícios para a saúde física</h3>
+                <ul>
+                    <li>Mais energia para realizar atividades.</li>
+                    <li>Melhor funcionamento do intestino.</li>
+                    <li>Fortalecimento do sistema imunológico.</li>
+                    <li>Auxílio na recuperação muscular.</li>
+                    <li>Prevenção de doenças relacionadas à alimentação.</li>
+                </ul>
+            </div>
+
+        </main>
+
+        <div class="navegacao">
+            <button onclick="mostrarPagina('treinos')">
+                ← Voltar aos treinos
+            </button>
+
+            <button onclick="mostrarPagina('saude')">
+                Saúde mental e física →
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- TELA DE SAÚDE MENTAL E FÍSICA -->
+    <section id="saude" class="pagina escondido">
+
+        <header>
+            <h1>Saúde Mental e Física</h1>
+            <p>Uma vida saudável começa com bons hábitos!</p>
+        </header>
+
+        <main class="conteudo">
+
+            <h2>Benefícios de uma rotina saudável</h2>
+
+            <div class="card">
+                <h3>🧠 Saúde Mental</h3>
+                <ul>
+                    <li>Ajuda a diminuir o estresse.</li>
+                    <li>Pode melhorar o humor.</li>
+                    <li>Contribui para uma boa qualidade do sono.</li>
+                    <li>Ajuda na concentração e memória.</li>
+                    <li>Promove o bem-estar emocional.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>💪 Saúde Física</h3>
+                <ul>
+                    <li>Melhora o condicionamento físico.</li>
+                    <li>Fortalece músculos e ossos.</li>
+                    <li>Contribui para a saúde do coração.</li>
+                    <li>Melhora a disposição diária.</li>
+                    <li>Ajuda na prevenção de doenças.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>😴 A importância do sono</h3>
+                <p>
+                    Dormir bem ajuda na recuperação do corpo,
+                    na memória, na concentração e no equilíbrio emocional.
+                    Procure manter horários regulares de sono.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3> Cuide de você!</h3>
+                <p>
+                    Reserve um tempo para descansar, praticar atividades
+                    que gosta, conversar com pessoas importantes e
+                    respeitar seus sentimentos.
+                </p>
+            </div>
+
+            <div class="mensagem-final">
+                <h2>Pequenos hábitos, grandes mudanças!</h2>
+                <p>
+                    Não é necessário mudar tudo de uma vez.
+                    Comece aos poucos e construa uma rotina
+                    que faça bem para seu corpo e sua mente.
+                </p>
+            </div>
+
+        </main>
+
+        <div class="navegacao">
+            <button onclick="mostrarPagina('alimentacao')">
+                ← Voltar
+            </button>
+
+            <button onclick="mostrarPagina('treinos')">
+                Voltar ao início
+            </button>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
